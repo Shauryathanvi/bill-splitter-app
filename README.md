@@ -27,6 +27,9 @@ A stylish, interactive Bill Splitter web app with glassmorphism UI, GTA-inspired
 
 ![Screenshot](Media/Screenshot.png)
 
+##Use through a Live demo !
+- https://shauryathanvi.github.io/bill-splitter-app/
+
 ## Setup
 
 1. Clone the repo:

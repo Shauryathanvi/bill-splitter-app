@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bill Splitter</title>
+	<link rel="stylesheet" href="biCSS.css">
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Pricedown&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1 class="main-title">Bill Splitter</h1>
+	<main class="glass-container main-container">
+		<form id="amountForm" autocomplete="off">
+			<label for="amountInput">Enter an amount</label><br>
+			<input type="text" id="amountInput" name="amountInput" required autofocus aria-label="Enter an amount">
+			<button type="submit">Add</button>
+			<span id="totalValueLabel">Total Value: 0</span>
+		</form>
+		<div id="addAfterDiscountWarning" class="add-warning"></div>
+		<div id="errorBox" role="alert"></div>
+		<ul id="amountList"></ul>
+		<button id="nextBtn" type="button">Next</button>
+	<section id="discountSection" style="margin-top:20px;">
+			<label for="discountInput">Discount</label><br>
+			<input type="text" id="discountInput" name="discountInput" aria-label="Discount value">
+			<button id="discountNextBtn" type="button">Calculate</button>
+			<fieldset style="border:none; margin:0; padding:0;">
+				<legend style="font-size:1rem; color:#1c2816;">Discount Type</legend>
+				<input type="radio" id="discountAmount" name="discountType" value="amount" checked>
+				<label for="discountAmount">Discount Amount</label>
+				<input type="radio" id="discountPercent" name="discountType" value="percent">
+				<label for="discountPercent">Discount Percentage</label>
+			</fieldset>
+			<div id="discountErrorBox" role="alert"></div>
+			<ul id="discountedList"></ul>
+			<div id="discountedTotalLabel">Discounted Total: 0.00</div>
+			<button id="resetBtn" type="button">Reset</button>
+		</section>
+	</main>
+	<script src="biApp.js"></script>
+</body>
+</html>
+

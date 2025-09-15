@@ -1,0 +1,164 @@
+button:focus, input:focus {
+	outline: 2px solid #ffd700;
+	outline-offset: 2px;
+}
+
+.glass-container {
+	transition: box-shadow 0.3s, background 0.3s;
+}
+
+@media (max-width: 600px) {
+	.glass-container {
+		max-width: 95vw;
+		padding: 1rem;
+	}
+	.main-title {
+		font-size: 2rem;
+	}
+}
+
+input[type="text"], input[type="number"] {
+	padding: 8px 12px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	font-size: 1rem;
+	margin-bottom: 8px;
+	background: rgba(255,255,255,0.7);
+	transition: border-color 0.2s;
+}
+input[type="text"]:focus, input[type="number"]:focus {
+	border-color: #43e97b;
+}
+
+ul {
+	padding-left: 1.2em;
+	margin-bottom: 1em;
+}
+ul li {
+	margin-bottom: 0.5em;
+	background: rgba(255,255,255,0.2);
+	border-radius: 6px;
+	padding: 6px 10px;
+}
+
+@font-face {
+	font-family: 'GTAFont'; 
+	src: url('Fonts/Pricedown Bl.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'GTAFont2'; 
+	src: url('Fonts/Diploma.ttf') format('truetype');
+}
+
+
+
+.main-title {
+	position: absolute;
+	top: 1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #43e97b;
+	font-size: 3rem;
+	font-family: 'GTAFont', Arial, sans-serif;
+	font-weight: bold;
+	text-shadow: 0 2px 8px rgba(67,233,123,0.5);
+	letter-spacing: 2px;
+}
+
+label, legend {
+	font-family: 'GTAFont2', Arial, sans-serif;
+	font-size: 1.2rem;
+	color: #1c2816;
+}
+
+/* Glass container spacing */
+.main-container {
+		margin-top: 6rem;
+}
+
+#totalValueLabel {
+	margin-left: 15px;
+}
+
+#addAfterDiscountWarning {
+	color: rgb(219, 111, 16);
+	margin-top: 10px;
+	font-weight: bold;
+	display: none;
+}
+
+#errorBox, #discountErrorBox {
+	color: red;
+	display: none;
+	margin-top: 10px;
+}
+
+#nextBtn, #discountNextBtn, #resetBtn {
+	margin-top: 15px;
+}
+#discountNextBtn {
+	margin-left: 10px;
+}
+
+#discountSection { display: none; }
+
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, rgb(77,77,255) 0%, #1f4037 100%, #38f9d7 100%);
+}
+
+
+button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #1c7c1c; 
+  border: 2px solid #ffd700;
+  border-radius: 12px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: 
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-4px);
+  background-color: #2a9d2a;   
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+button:active {
+  transform: translateY(0); 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.glass-container {
+	--bg-glass: rgba(255, 255, 255, 0.15);
+	--glass-border: rgba(255, 255, 255, 0.18);
+	--accent: #43e97b;
+	background: rgba(148, 145, 145, 0.564);
+	box-shadow: 0 8px 32px 0 rgba(51, 60, 198, 0.37);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	border-radius: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	padding: 2rem;
+		max-width: 475px;
+	width: 50%;
+}
+
+.is-visible { display: block !important; }
+
+:root {
+	--primary: rgb(77,77,255);
+	--glass: rgba(148,145,145,0.56);
+}

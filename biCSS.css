@@ -15,6 +15,54 @@ button:focus, input:focus {
 	.main-title {
 		font-size: 2rem;
 	}
+	body {
+		flex-direction: column;
+		align-items: stretch;
+		padding: 0;
+	}
+	.glass-container {
+		width: 100vw;
+		min-width: 0;
+		box-sizing: border-box;
+		margin-top: 2rem;
+		padding: 1rem 0.5rem;
+	}
+	#amountForm, #discountSection {
+		width: 100%;
+		min-width: 0;
+		box-sizing: border-box;
+	}
+	input[type="text"], input[type="number"] {
+		font-size: 1.1rem;
+		padding: 10px 8px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	button {
+		font-size: 1rem;
+		padding: 10px 16px;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	ul {
+		padding-left: 0.5em;
+	}
+	ul li {
+		font-size: 1rem;
+		padding: 8px 6px;
+	}
+	#totalValueLabel, #discountedTotalLabel {
+		display: block;
+		margin: 10px 0 0 0;
+		font-size: 1.1rem;
+	}
+	label, legend {
+		font-size: 1rem;
+	}
+	#addAfterDiscountWarning {
+		font-size: 0.95rem;
+		margin-top: 6px;
+	}
 }
 
 input[type="text"], input[type="number"] {

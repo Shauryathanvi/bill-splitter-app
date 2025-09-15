@@ -25,7 +25,7 @@ A stylish, interactive Bill Splitter web app with glassmorphism UI, GTA-inspired
 
 ## Screenshots
 
-![Screenshot](image.png)
+![Screenshot](Media/Screenshot.png)
 
 ## Setup
 

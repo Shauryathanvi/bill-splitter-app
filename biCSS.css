@@ -9,7 +9,7 @@ button:focus, input:focus {
 
 @media (max-width: 600px) {
 	.glass-container {
-		max-width: 95vw;
+		max-width: 155vw;
 		padding: 1rem;
 	}
 	.main-title {
